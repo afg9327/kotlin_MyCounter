@@ -24,21 +24,20 @@ class MainActivity : ComponentActivity() {
             MyApp {
                 Column {
                     Row{
+
                         Counter()
                         Counter()
                         Counter()
-                        Counter()
-                        Counter()
+
                     }
                     Row{
                         Counter()
                         Counter()
                         Counter()
                         Counter()
-                        Counter()
+
                     }
                     Row{
-                        Counter()
                         Counter()
                         Counter()
                         Counter()
@@ -81,8 +80,9 @@ fun Counter() {
         Column{
             Button(modifier = Modifier
                 //.fillMaxWidth(),
-                .height(50.dp)
-                ,onClick = { count++ })
+                .height(50.dp),
+//                verticalArrangement = Arrangement.Center,
+                onClick = { count++ })
                 {
                 Text(text = "증가")
             }
